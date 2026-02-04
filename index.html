@@ -19,8 +19,8 @@
             <a class="nav-link" href="#home">Home</a>
             <a class="nav-link" href="#about">About</a>
             <a class="nav-link" href="#experience">Experience</a>
+            <a class="nav-link" href="#projects">Projects</a>
             <a class="nav-link" href="#skills">Skills</a>
-            <!-- <a class="nav-link" href="#projects">Projects</a> -->
             <a class="nav-link" href="#contact">Contact</a>
         </nav>
     </header>
@@ -77,17 +77,19 @@
                                 <span class="timeline-dates"><em>June 2025 - August 2025</em></span>
                             </div>
                             <ul class="timeline-bullets">
-                                <li>Designed and implemented a React-based graphical user interface (GUI) enabling
-                                    real-time interaction with AI-driven agents, improving interpretability of complex
-                                    models.
+                                <li>
+                                    Architected a React-based visualization interface for AI agents, reducing the time
+                                    required for scientists to interpret complex model behaviors by enabling real-time
+                                    feedback loops.
                                 </li>
-                                <li>Engineered 14 reusable, modular UI components in JavaScript/TypeScript using MVVM
-                                    architecture and human-user interaction (HCI) principles, enhancing usability and
-                                    scalability of scientific applications.
+                                <li>Engineered 14 modular, reusable UI components using TypeScript and MVVM
+                                    architecture, enforcing strict typing and improving code maintainability for future
+                                    scalability.
                                 </li>
-                                <li>Built a model-agnostic visualization framework with K-Means as the initial
-                                    prototype, enabling integration of additional machine learning algorithms into
-                                    interactive Plotly charts.
+                                <li>
+                                    Developed a model-agnostic visualization framework integrating K-Means clustering;
+                                    enabled dynamic rendering of high-dimensional data via Plotly, supporting diverse ML
+                                    algorithms.
                                 </li>
                             </ul>
                         </div>
@@ -106,14 +108,20 @@
                                 <span class="timeline-dates"><em>August 2024 - December 2024</em></span>
                             </div>
                             <ul class="timeline-bullets">
-                                <li>Developed a Python-based analytics pipeline with Pandas/NumPy to assess brand health
-                                    from Google Trends search data across multiple cities.
+                                <li>
+                                    Built an automated analytics pipeline using Python (Pandas/NumPy) to ingest and
+                                    process localized Google Trends data, quantifying brand health across multiple
+                                    geographic markets.
+
                                 </li>
-                                <li>Performed in-depth exploratory data analysis (EDA) and statistical correlation
-                                    analysis to identify key drivers of brand interest and engagement over time.
+                                <li>
+                                    Conducted statistical correlation analysis to isolate key drivers of brand
+                                    engagement, directly influencing data-driven marketing strategies for client
+                                    campaigns.
                                 </li>
-                                <li>Implemented time-series forecasting (Holt’s Linear Trend model) to project search
-                                    trends, enabling strategic planning with quantified insights.
+                                <li>
+                                    Implemented Holt’s Linear Trend forecasting models to project future search volumes,
+                                    providing stakeholders with actionable metrics for long-term resource planning.
                                 </li>
                             </ul>
                         </div>
@@ -132,16 +140,19 @@
                                 <span class="timeline-dates"><em>May 2024 - May 2025</em></span>
                             </div>
                             <ul class="timeline-bullets">
-                                <li>Selected from 3,000+ applications for a competitive year-long fellowship combining
-                                    ML coursework with Cornell faculty, industry mentorship, and applied projects.
-                                    multiple cities.
+                                <li>
+                                    Selected from 3,000+ applicants for an intensive AI fellowship in partnership with
+                                    Cornell Tech.
                                 </li>
-                                <li>Built a Book Review Genre Classifier in Python/scikit-learn, achieving 79% balanced
-                                    accuracy across 1,974 labeled samples through preprocessing, feature engineering,
+                                <li>
+                                    Developed a Book Review Genre Classifier using Scikit-learn, achieving 79% balanced
+                                    accuracy on a 1,900+ sample dataset through rigorous feature engineering (TF-IDF)
                                     and hyperparameter tuning.
                                 </li>
-                                <li>Built and optimized natural language processing (NLP) pipelines and evaluated
-                                    Logistic Regression, Random Forest, and GBDT predictive models. </li>
+                                <li>
+                                    Evaluated and benchmarked multiple predictive models (Logistic Regression, Random
+                                    Forest, GBDT) to optimize NLP pipeline performance.
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -163,7 +174,8 @@
                                     MERN stack, including user authentication endpoints with cookie-based security
                                     policies, while collaborating with a cross-functional team.
                                 </li>
-                                <li>Produced UI/UX wireframes in Figma to clarify user workflows and support front-end development. 
+                                <li>Produced UI/UX wireframes in Figma to clarify user workflows and support front-end
+                                    development.
                                 </li>
                             </ul>
                         </div>
@@ -172,6 +184,40 @@
             </div>
         </section>
 
+        <!-- Projects Section -->
+        <section id="projects" class="content-section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card animate">
+                        <h3>Social News Aggregation Platform (MERN Stack)</h3>
+                        <p>A full stack web application that mimics Reddit's functionality, allowing users to post,
+                            comment, and vote on content. Built with React, Node.js, and MongoDB.</p>
+                        <!-- <a href="#" class="project-link" target="_blank">View Project</a> -->
+                        <ul class="timeline-bullets">
+                            <li>
+                                Engineered a feature-rich social platform replicating core Reddit functionality,
+                                utilizing React for dynamic UI rendering and Node.js/Express for high-throughput API
+                                handling.
+                            </li>
+                            <li>
+                                Implemented secure user authentication and session persistence using Bcrypt hashing and
+                                HttpOnly cookies, effectively mitigating XSS vulnerabilities and preventing session
+                                hijacking.
+                            </li>
+                            <li>
+                                Designed a normalized MongoDB schema with Mongoose validation to handle complex
+                                relational data, including nested comment threads and vote-tracking logic.
+                            </li>
+                            <li>
+                                Deployed RESTful CRUD endpoints for posts and user profiles, ensuring low-latency data
+                                retrieval.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Skills Section -->
         <section id="skills" class="content-section">
             <div class="container">
@@ -223,21 +269,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Projects Section -->
-        <!-- <section id="projects" class="content-section">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="project-grid">
-                    <div class="project-card animate">
-                        <h3>Fake Reddit</h3>
-                        <p>A full stack web application that mimics Reddit's functionality, allowing users to post,
-                            comment, and vote on content. Built with React, Node.js, and MongoDB.</p>
-                        <a href="#" class="project-link" target="_blank">View Project</a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
         <!-- Contact Section -->
         <section id="contact" class="content-section">
