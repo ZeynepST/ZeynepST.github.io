@@ -262,6 +262,12 @@ nav {
 .project-card p {
   color: #444;
 }
+.project-date {
+  font-size: 0.95rem;
+  color: var(--earthy-brown);
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
 .project-link {
   display: inline-block;
   margin-top: auto;
