@@ -78,18 +78,20 @@
                             </div>
                             <ul class="timeline-bullets">
                                 <li>
-                                    Architected a React-based visualization interface for AI agents, reducing the time
-                                    required for scientists to interpret complex model behaviors by enabling real-time
-                                    feedback loops.
-                                </li>
-                                <li>Engineered 14 modular, reusable UI components using TypeScript and MVVM
-                                    architecture, enforcing strict typing and improving code maintainability for future
-                                    scalability.
+                                    Built a React + TypeScript visualization interface for adaptive AI agents in the
+                                    bluesky-adaptive scientific computing framework used by research scientists to
+                                    monitor and steer live experiments.
                                 </li>
                                 <li>
-                                    Developed a model-agnostic visualization framework integrating K-Means clustering;
-                                    enabled dynamic rendering of high-dimensional data via Plotly, supporting diverse ML
-                                    algorithms.
+                                    Architected 14 reusable MVVM components including Plotly heatmaps, cluster
+                                    comparison panels, and dynamic visualization modes to inspect agent decision states
+                                    in real time.
+                                </li>
+                                <li>
+                                    Implemented client-side K-Means clustering using TensorFlow.js and ScikitJS within a
+                                    visualization framework architected to support multiple clustering models, enabling
+                                    interactive exploration of high-dimensional data without backend computation.
+
                                 </li>
                             </ul>
                         </div>
@@ -109,19 +111,18 @@
                             </div>
                             <ul class="timeline-bullets">
                                 <li>
-                                    Built an automated analytics pipeline using Python (Pandas/NumPy) to ingest and
-                                    process localized Google Trends data, quantifying brand health across multiple
-                                    geographic markets.
+                                    Built a Python analytics pipeline using Pandas and NumPy that ingested and processed
+                                    localized Google Trends data across multiple geographic markets.
+                                </li>
+                                <li>
+                                    Applied Holt’s Linear Trend forecasting to project future search demand and support
+                                    long-term planning.
 
                                 </li>
                                 <li>
-                                    Conducted statistical correlation analysis to isolate key drivers of brand
-                                    engagement, directly influencing data-driven marketing strategies for client
-                                    campaigns.
-                                </li>
-                                <li>
-                                    Implemented Holt’s Linear Trend forecasting models to project future search volumes,
-                                    providing stakeholders with actionable metrics for long-term resource planning.
+                                    Conducted statistical correlation analysis to isolate the key drivers of brand
+                                    engagement across markets, translating raw search signals into data-driven strategy
+                                    recommendations delivered to clients.
                                 </li>
                             </ul>
                         </div>
@@ -141,17 +142,19 @@
                             </div>
                             <ul class="timeline-bullets">
                                 <li>
-                                    Selected from 3,000+ applicants for an intensive AI fellowship in partnership with
-                                    Cornell Tech.
+                                    Selected from over 3,000 applicants for Cornell Tech’s applied AI fellowship
+                                    covering the full machine learning lifecycle from data preprocessing and feature
+                                    engineering through model evaluation and deployment.
                                 </li>
                                 <li>
-                                    Developed a Book Review Genre Classifier using Scikit-learn, achieving 79% balanced
-                                    accuracy on a 1,900+ sample dataset through rigorous feature engineering (TF-IDF)
-                                    and hyperparameter tuning.
+                                    Built a 7-class NLP genre classifier on 1,900 book reviews, applying an analytical
+                                    approach to feature engineering and model selection (TF-IDF + GridSearchCV),
+                                    achieving a 79% balanced accuracy.
                                 </li>
                                 <li>
-                                    Evaluated and benchmarked multiple predictive models (Logistic Regression, Random
-                                    Forest, GBDT) to optimize NLP pipeline performance.
+                                    Structured the classifier as a modular Python package with clean separation of
+                                    preprocessing, feature engineering, modeling, evaluation, and prediction, enabling
+                                    independent iteration on each pipeline stage.
                                 </li>
                             </ul>
                         </div>
@@ -190,28 +193,40 @@
                 <h2>Projects</h2>
                 <div class="project-grid">
                     <div class="project-card animate">
-                        <h3>Social News Aggregation Platform (MERN Stack)</h3>
-                        <p>A full stack web application that mimics Reddit's functionality, allowing users to post,
-                            comment, and vote on content. Built with React, Node.js, and MongoDB.</p>
-                        <!-- <a href="#" class="project-link" target="_blank">View Project</a> -->
+                        <h3>HTTP Server & Caching Proxy (From Scratch) </h3>
+                        <p class="project-date"><em>March 2026</em></p>
                         <ul class="timeline-bullets">
                             <li>
-                                Engineered a feature-rich social platform replicating core Reddit functionality,
-                                utilizing React for dynamic UI rendering and Node.js/Express for high-throughput API
-                                handling.
+                                Implemented a multithreaded HTTP/1.1 web server and caching proxy using raw Python
+                                sockets with no external libraries, handling concurrent connections via daemon threads.
                             </li>
                             <li>
-                                Implemented secure user authentication and session persistence using Bcrypt hashing and
-                                HttpOnly cookies, effectively mitigating XSS vulnerabilities and preventing session
-                                hijacking.
+                                Maintained separate threading locks for the in-memory cache and live request statistics,
+                                preventing contention between cache access and metrics tracking.
                             </li>
                             <li>
-                                Designed a normalized MongoDB schema with Mongoose validation to handle complex
-                                relational data, including nested comment threads and vote-tracking logic.
+                                Exposed a built-in JSON metrics and telemetry endpoint and hardened file serving with
+                                path sanitization to prevent directory traversal attacks across 12 supported MIME types.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project-card animate">
+                        <h3>Social News Aggregation Platform | Full-Stack Web Application</h3>
+                        <p class="project-date"><em>February 2025 - May 2025</em></p>
+                        <ul class="timeline-bullets">
+                            <li>
+                                Built a full-stack social platform with recursive comment threads, per-user vote
+                                tracking, and community posts using a React frontend over a Node.js and Express RESTful
+                                API.
                             </li>
                             <li>
-                                Deployed RESTful CRUD endpoints for posts and user profiles, ensuring low-latency data
-                                retrieval.
+                                Designed a MongoDB schema with Mongoose validation for nested comment trees and per-user
+                                voting, and developed Jest tests to validate recursive deletion, API endpoints, and
+                                authenticated vs. guest user flows.
+                            </li>
+                            <li>
+                                Secured authentication using Bcrypt hashing and HttpOnly cookies to defend against XSS
+                                and session hijacking.
                             </li>
                         </ul>
                     </div>
